@@ -1,0 +1,74 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+      "header header header"
+      "sidebar content1 content1"
+      "sidebar content2 content3"
+      "footer footer footer";
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: linear-gradient(to bottom, #00c4cc, #00e7b3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1 {
+  grid-area: content1;
+  background: linear-gradient(to bottom right, #2575fc, #00c4cc);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content2 {
+  grid-area: content2;
+  background: linear-gradient(to bottom right, #6a11cb, #00c4cc);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content3 {
+  grid-area: content3;
+  background: linear-gradient(to bottom right, #2575fc, #00e7b3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
