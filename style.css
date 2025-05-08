@@ -1,7 +1,7 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #0d0d0d; /* Deep black for high contrast */
 }
 
 .container {
@@ -14,61 +14,97 @@ body {
       "footer footer footer";
   grid-template-rows: 1fr 2fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 2fr;
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
 .header {
   grid-area: header;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff); /* Neon magenta to cyan holographic */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 0, 255, 0.5);
+  background-size: 200% 200%;
+  animation: holographic 3s linear infinite;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background: linear-gradient(to bottom, #00c4cc, #00e7b3);
-  color: white;
+  background: linear-gradient(135deg, #ff9500, #ff2d55, #ff9500); /* Fiery orange to neon pink loop */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 149, 0, 0.5);
+  background-size: 200% 200%;
+  animation: holographic 4s linear infinite;
 }
 
 .content1 {
   grid-area: content1;
-  background: linear-gradient(to bottom right, #2575fc, #00c4cc);
-  color: white;
+  background: linear-gradient(90deg, #00ff88, #ff00ff, #00ff88); /* Neon green to magenta cycle */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.5);
+  background-size: 200% 200%;
+  animation: holographic 5s linear infinite;
 }
 
 .content2 {
   grid-area: content2;
-  background: linear-gradient(to bottom right, #6a11cb, #00c4cc);
-  color: white;
+  background: linear-gradient(135deg, #ff00cc, #3333ff, #ff00cc); /* Neon pink to electric blue loop */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 0, 204, 0.5);
+  background-size: 200% 200%;
+  animation: holographic 3.5s linear infinite;
 }
 
 .content3 {
   grid-area: content3;
-  background: linear-gradient(to bottom right, #2575fc, #00e7b3);
-  color: white;
+  background: linear-gradient(45deg, #00ff00, #ffff00, #00ff00); /* Lime green to yellow shimmer */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 255, 0, 0.5);
+  background-size: 200% 200%;
+  animation: holographic 4.5s linear infinite;
 }
 
 .footer {
   grid-area: footer;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff); /* Matching header holographic */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 0, 255, 0.5);
+  background-size: 200% 200%;
+  animation: holographic 3s linear infinite;
+}
+
+@keyframes holographic {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
