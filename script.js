@@ -10,26 +10,26 @@
 // // 1.
 let value = prompt("Enter a number less than or equal to 100:");
 if (value > 100) {
-    console.log("The value is greater than 100.");
+    alert("The value is greater than 100.");
 }
 else{
-    console.log("The value is less than or equal to 100.");
+    alert("The value is less than or equal to 100.");
 }
 
 // // 2.
 let FirstValue = prompt("enter first value:");
 let SecondValue = prompt("enter second value:");
 if(FirstValue > SecondValue){
-    console.log("First value is greater than second value.");
+    alert("First value is greater than second value.");
 }
 else if (FirstValue < SecondValue){
-    console.log("Second value is greater than first value.");
+    alert("Second value is greater than first value.");
 }
 else if (FirstValue == SecondValue){
-    console.log("Both values are equal.");
+    alert("Both values are equal.");
 }
 else{
-    console.log("Invalid input.");
+    alert("Invalid input.");
 }
 
 // 3.
